@@ -2,10 +2,10 @@
 
 const UsageDetails = require('../models/UsageDetailsModel');
 
-// Example: Get usage details for a specific user
+
 const getUsageDetails = async (req, res) => {
   try {
-    // Get usage details based on the user ID
+    
     const usageDetails = await UsageDetails.findOne({ userId: req.params.userId });
     res.json(usageDetails);
   } catch (error) {
@@ -15,5 +15,5 @@ const getUsageDetails = async (req, res) => {
 
 module.exports = {
   getUsageDetails,
-  // Add other methods for handling usage details as needed
+  
 };
